@@ -4,11 +4,11 @@ import { motion } from 'framer-motion'
 import ProductBlock from '@/components/shared/ProductBlock'
 
 const benefits = [
-  'Diagnóstico 5D completo da sua empresa — feito durante o curso',
+  'Diagnóstico 5D completo da sua empresa',
   'TOP 3 gargalos com custo financeiro quantificado',
   'Roadmap Executivo de 90 dias pronto para executar',
   '15 artefatos prontos: brief, scorecard, plano, apresentação para sócios',
-  'Prompts Claude prontos para cada etapa do método',
+  'Suporte direto na aplicação do método na sua realidade',
   'Clareza para decidir o próximo movimento estratégico',
 ]
 
@@ -47,7 +47,7 @@ const SignalVisual = () => (
 
     {/* Insight */}
     <div className="pt-4 border-t border-line bg-canvas-warm rounded-lg p-4">
-      <p className="text-xs text-ink font-medium mb-2">IA INSIGHT</p>
+      <p className="text-xs text-ink font-medium mb-2">ANÁLISE DO DIAGNÓSTICO</p>
       <p className="text-xs text-ink-muted leading-relaxed">
         Governance é o gargalo crítico. Sem estrutura de decisão, a empresa não conseguirá escalar sem aumentar a dependência do dono.
       </p>
@@ -61,13 +61,13 @@ export default function ProductSignalSection() {
       <div className="max-w-7xl mx-auto">
         <ProductBlock
           number={1}
-          tag="Produto de Entrada"
-          title="Curso SIGNAL"
-          subtitle="Diagnostique sua empresa e construa seu roadmap com IA"
-          description="Um curso online onde você aplica o método na sua empresa enquanto aprende. Em 6 semanas, você sai com diagnóstico completo, gargalos quantificados financeiramente e um roadmap de 90 dias pronto para executar — usando o Claude como ferramenta de análise."
-          forWho="Donos de empresa R$5M a R$20M que sentem que a gestão não acompanhou o crescimento — e querem clareza antes de contratar consultoria cara."
+          tag="Método de Diagnóstico"
+          title="Método SIGNAL"
+          subtitle="Diagnostique sua empresa e construa seu roadmap executivo"
+          description="Aplique o método SIGNAL na sua empresa e saia com diagnóstico completo em 6 semanas. Gargalos quantificados financeiramente. Roadmap de 90 dias pronto para executar. Você recebe toda a metodologia, artefatos e suporte para implementar a solução na sua realidade."
+          forWho="Donos de empresa R$5M a R$20M que sentem que a gestão não acompanhou o crescimento e querem clareza antes de contratar consultoria cara."
           benefits={benefits}
-          ctaText="Quero conhecer o SIGNAL"
+          ctaText="Quero conhecer o Método SIGNAL"
           visual={<SignalVisual />}
         />
       </div>
