@@ -4,32 +4,47 @@ import { motion } from 'framer-motion'
 
 const problems = [
   {
+    number: 1,
     title: 'Dono é o gargalo das decisões',
-    description: 'Toda decisão importante passa por você. Sem você, a máquina trava.',
-    tag: 'Centralização extrema',
+    description: 'Não é que você não consiga delegar. É que não existe matriz de alçada documentada.',
+    costs: [
+      '35% do seu tempo em decisões que qualquer gerente saberia tomar',
+      '12% dos pedidos perdidos por demora de aprovação',
+      'Empresa trava em R$15-20M — nunca passa'
+    ],
+    solution: 'Estrutura de alçada clara + auditoria de decisões críticas',
     color: 'accent-sky',
+    barColor: '#7CB4D6',
   },
   {
+    number: 2,
     title: 'KPIs não viram ação',
-    description: 'Tem números bonitos, mas execução é caótica. Decisões no feeling.',
-    tag: 'Gestão por intuição',
+    description: 'Crescimento de 75% em faturamento. Mas margem caiu de 10% para 4%. Ninguém vê isso acontecer até é tarde.',
+    costs: [
+      'Lucro absoluto sobre 12-18 meses depois cai abruptamente',
+      'Você descobre quando está em endividamento rápido',
+      'Perda de R$1.5M-3M em lucro que você não vê vindo'
+    ],
+    solution: 'Painel de saúde financeira em tempo real + ritual semanal',
     color: 'accent-amber',
+    barColor: '#BA7517',
   },
   {
+    number: 3,
     title: 'Consultoria virou relatório de prateleira',
-    description: 'Diagnóstico caro, implementação zero. Nada mudou na prática.',
-    tag: 'Impacto zero',
+    description: 'O diagnóstico é perfeito. Mas não foi feito para sua realidade operacional específica.',
+    costs: [
+      'Recomendações exigem investimento que você não tem',
+      'Recomendações exigem tempo que seu time não tem',
+      'Zero implementado. Confiança abaixo. Dinheiro gasto fora.'
+    ],
+    solution: 'Implantação com time seu + responsável claro + 60 dias pós-projeto',
     color: 'accent-green',
+    barColor: '#0F6E56',
   },
 ]
 
 export default function ProblemSection() {
-  const colorMap: { [key: string]: { bg: string; text: string; bar: string } } = {
-    'accent-sky': { bg: 'bg-sky-50', text: 'text-sky-600', bar: '#7CB4D6' },
-    'accent-amber': { bg: 'bg-amber-50', text: 'text-amber-600', bar: '#BA7517' },
-    'accent-green': { bg: 'bg-green-50', text: 'text-green-600', bar: '#0F6E56' },
-  }
-
   const container = {
     hidden: { opacity: 0 },
     visible: {
@@ -68,54 +83,68 @@ export default function ProblemSection() {
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, margin: '-80px' }}
-          className="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-8"
+          className="grid grid-cols-1 lg:grid-cols-3 gap-8"
         >
-          {problems.map((problem, idx) => {
-            const colors = colorMap[problem.color]
-            return (
-              <motion.div
-                key={idx}
-                variants={item}
-                whileHover={{ y: -6 }}
-                className={`group relative bg-canvas-paper border border-line hover:border-line-strong rounded-lg overflow-hidden transition-all duration-300 hover:shadow-cardHover`}
-              >
-                {/* Left accent bar */}
-                <div
-                  className="absolute left-0 top-0 bottom-0 w-1"
-                  style={{ backgroundColor: colors.bar }}
-                />
+          {problems.map((problem, idx) => (
+            <motion.div
+              key={idx}
+              variants={item}
+              whileHover={{ y: -4 }}
+              className="relative bg-canvas-paper border border-line rounded-lg overflow-hidden transition-all duration-300 hover:shadow-cardHover"
+            >
+              {/* Top colored bar */}
+              <div
+                className="h-1.5 w-full"
+                style={{ backgroundColor: problem.barColor }}
+              />
 
-                <div className="p-8 pl-8">
-                  <div className="flex items-start gap-4 mb-6">
-                    <div
-                      className={`w-12 h-12 rounded-lg flex items-center justify-center flex-shrink-0 transition-transform group-hover:scale-110`}
-                      style={{ backgroundColor: colors.bar }}
-                    >
-                      <span className="text-canvas font-semibold text-lg">{idx + 1}</span>
-                    </div>
-                    <div className="flex-1">
-                      <h3 className="text-lg font-semibold text-ink leading-tight">
-                        {problem.title}
-                      </h3>
-                    </div>
+              <div className="p-8">
+                {/* Number and Title */}
+                <div className="flex items-start gap-4 mb-6">
+                  <div
+                    className="w-10 h-10 rounded flex items-center justify-center flex-shrink-0 text-canvas font-semibold text-base"
+                    style={{ backgroundColor: problem.barColor }}
+                  >
+                    {problem.number}
                   </div>
-
-                  <p className="text-ink-muted mb-6 leading-relaxed">
-                    {problem.description}
-                  </p>
-
-                  <div className="pt-6 border-t border-line">
-                    <span className={`inline-block px-3 py-1.5 rounded-full text-xs font-medium`} style={{
-                      backgroundColor: `${colors.bar}15`,
-                      color: colors.bar
-                    }}>
-                      {problem.tag}
-                    </span>
-                  </div>
+                  <h3 className="text-lg font-semibold text-ink leading-tight">
+                    {problem.title}
+                  </h3>
                 </div>
-              </motion.div>
-            )
-          })}
+
+                {/* Description */}
+                <p className="text-sm text-ink-muted mb-6 leading-relaxed">
+                  {problem.description}
+                </p>
+
+                {/* O custo real */}
+                <div className="mb-6 pb-6 border-b border-line">
+                  <p className="text-xs font-semibold text-ink mb-3 uppercase tracking-wide">O custo real:</p>
+                  <ul className="space-y-2">
+                    {problem.costs.map((cost, i) => (
+                      <li key={i} className="text-xs text-ink-muted leading-relaxed flex gap-2">
+                        <span className="text-accent-green font-bold">•</span>
+                        <span>{cost}</span>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+
+                {/* Solução Praxia */}
+                <div
+                  className="p-4 rounded-lg"
+                  style={{ backgroundColor: `${problem.barColor}10` }}
+                >
+                  <p className="text-xs font-semibold mb-2" style={{ color: problem.barColor }}>
+                    Solução Praxia:
+                  </p>
+                  <p className="text-xs text-ink-muted leading-relaxed">
+                    {problem.solution}
+                  </p>
+                </div>
+              </div>
+            </motion.div>
+          ))}
         </motion.div>
       </div>
     </section>
