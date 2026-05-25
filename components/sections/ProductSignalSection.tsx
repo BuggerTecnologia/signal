@@ -46,11 +46,23 @@ const SignalVisual = () => (
     </div>
 
     {/* Insight */}
-    <div className="pt-4 border-t border-line bg-canvas-warm rounded-lg p-4">
+    <div className="pt-4 border-t border-line bg-canvas-warm rounded-lg p-4 mb-4">
       <p className="text-xs text-ink font-medium mb-2">ANÁLISE DO DIAGNÓSTICO</p>
       <p className="text-xs text-ink-muted leading-relaxed">
         Governance é o gargalo crítico. Sem estrutura de decisão, a empresa não conseguirá escalar sem aumentar a dependência do dono.
       </p>
+    </div>
+
+    {/* Based on */}
+    <div className="pt-4 border-t border-line">
+      <p className="text-xs font-semibold text-ink-muted mb-3 uppercase tracking-wide">Baseado em:</p>
+      <div className="flex flex-wrap gap-2">
+        {['PMI/PMBOK 7', 'Lean Six Sigma DMAIC', 'OKR', 'PRINCE2', 'Kotter 8-Step'].map((framework, idx) => (
+          <span key={idx} className="text-xs text-ink-muted bg-canvas rounded px-2.5 py-1.5 border border-line">
+            {framework}
+          </span>
+        ))}
+      </div>
     </div>
   </div>
 )
