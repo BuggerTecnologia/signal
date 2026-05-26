@@ -11,17 +11,17 @@ const results = [
 
 const testimonials = [
   {
-    quote: 'Eu sabia que tinha problema de gestão. Não sabia que estava custando R$900 mil por ano. O SIGNAL me mostrou exatamente onde estava sangrando — e o plano para parar.',
+    quote: 'Sabia que tinha problema de gestão. Descobrir que custava R$900 mil por ano foi o choque. O SIGNAL mostrou exatamente onde sangrávamos e o plano para parar.',
     name: 'Marcelo Ribeiro',
     company: 'Distribuidora · R$14M/ano',
   },
   {
-    quote: 'A Mentoria foi o que faltava. Eu tinha o diagnóstico, tinha o plano. Só não executava porque o dia a dia engoliu tudo. Com o consultor ao lado, mudou.',
+    quote: 'Tinha diagnóstico e plano. Faltava execução porque o operacional consumia tudo. A Mentoria com consultor alocado foi o diferencial que faltava.',
     name: 'Ana Ferreira',
     company: 'Clínica de Estética · R$8M/ano',
   },
   {
-    quote: 'Já tinha feito consultoria antes e ficou só no relatório. O projeto Praxia foi diferente: o consultor ficou dentro da operação até o processo funcionar sozinho.',
+    quote: 'Consultoria anterior ficou apenas no relatório. O projeto Praxia foi diferente: o consultor trabalhou na operação até o processo estar pronto e sustentável.',
     name: 'Carlos Pires',
     company: 'Franqueado · 4 unidades',
   },

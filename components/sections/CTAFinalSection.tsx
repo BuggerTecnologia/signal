@@ -21,7 +21,7 @@ export default function CTAFinalSection() {
 
           {/* Subheadline */}
           <p className="text-lg text-ink-muted max-w-2xl mx-auto leading-relaxed">
-            Não importa onde está a empresa agora. O primeiro passo é sempre ter clareza — sobre o problema real, o custo que ele gera e o plano para resolver.
+            Onde quer que esteja sua empresa. O primeiro passo é clareza. Sobre o problema real, seu custo financeiro e o plano para resolver.
           </p>
 
           {/* CTAs */}
@@ -36,21 +36,21 @@ export default function CTAFinalSection() {
               whileHover={{ scale: 1.02, y: -2 }}
               className="px-8 py-3.5 rounded-md bg-ink hover:bg-ink-mid text-canvas font-medium transition-colors duration-300"
             >
-              ① Começar pelo Curso SIGNAL
+              Diagnóstico com Método SIGNAL
             </motion.button>
 
             <motion.button
               whileHover={{ scale: 1.02, y: -2 }}
               className="px-8 py-3.5 rounded-md border border-line hover:bg-canvas-warm text-ink font-medium transition-colors duration-300"
             >
-              ② Quero a Mentoria Praxia
+              Mentoria Praxia
             </motion.button>
 
             <motion.button
               whileHover={{ scale: 1.02, y: -2 }}
               className="px-8 py-3.5 rounded-md border border-line hover:bg-canvas-warm text-ink font-medium transition-colors duration-300"
             >
-              ③ Preciso de um Projeto
+              Projeto de Implantação
             </motion.button>
           </motion.div>
 
@@ -62,7 +62,7 @@ export default function CTAFinalSection() {
             viewport={{ once: true }}
             className="text-sm text-ink-muted"
           >
-            Não tem certeza por onde começar? Fale com um especialista e indicamos o caminho certo para o seu momento.
+            Incerto sobre o melhor caminho? Converse com um especialista. Indicaremos a trajetória ideal para seu momento.
           </motion.p>
         </motion.div>
       </div>

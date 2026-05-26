@@ -4,12 +4,12 @@ import { motion } from 'framer-motion'
 import ProductBlock from '@/components/shared/ProductBlock'
 
 const benefits = [
-  'Diagnóstico validado com seu time de gestão — não só com você',
-  'Cockpit de Gestão personalizado com os KPIs que importam',
-  'Sistema de reuniões redesenhado: menos reunião, mais decisão',
-  'OKRs trimestrais acompanhados e revisados a cada 2 semanas',
-  'Playbook do time de gestão: "como gerenciamos aqui"',
-  'Canal dedicado com consultor + suporte assíncrono em 24h',
+  'Diagnóstico validado com seu time de gestão completo',
+  'Cockpit de Gestão personalizado com os KPIs críticos',
+  'Sistema de reuniões otimizado. Menos reunião, mais decisão.',
+  'OKRs trimestrais acompanhados. Revisão a cada 2 semanas.',
+  'Playbook de gestão documentado. Processos formalizados.',
+  'Consultor dedicado com suporte prioritário em 24h',
 ]
 
 const MentoriaVisual = () => (
@@ -88,8 +88,8 @@ export default function ProductMentoriaSection() {
           tag="Acompanhamento"
           title="Mentoria Praxia"
           subtitle="Execute com um consultor ao seu lado"
-          description="Você já sabe o que precisa mudar. Agora precisa de alguém que garanta que vai acontecer. Com a Mentoria, um consultor sênior acompanha você e seu time por no mínimo 3 meses — com horas alocadas, rituais implantados e accountability real sobre os resultados."
-          forWho="Empresários que têm o diagnóstico mas travam na execução. Que precisam de alguém que obrigue o ritmo, capacite o time e entregue artefatos que o curso não cobre."
+          description="Você sabe o que precisa mudar. Falta quem garanta que aconteça. Consultor sênior alocado ao seu lado por 3 meses. Horas dedicadas, rituais formalizados, accountability claro sobre resultados."
+          forWho="Empresários com diagnóstico claro que travam na execução. Precisam de suporte prático, capacitação da equipe e formalização dos processos."
           benefits={benefits}
           ctaText="Conhecer a Mentoria"
           visual={<MentoriaVisual />}

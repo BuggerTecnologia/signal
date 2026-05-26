@@ -7,23 +7,23 @@ import { ChevronDownIcon } from '@radix-ui/react-icons'
 const faqs = [
   {
     question: 'Por onde devo começar?',
-    answer: 'Se você ainda não tem clareza sobre o principal gargalo da sua empresa, comece pelo SIGNAL. O curso entrega o diagnóstico e o roadmap. A partir daí, você decide se quer executar sozinho, com acompanhamento (Mentoria) ou com um consultor implantando (Projetos).',
+    answer: 'Comece pelo Método SIGNAL se não tem clareza sobre o principal gargalo. Entrega diagnóstico e roadmap em 6 semanas. Depois, escolha entre execução própria, acompanhamento via Mentoria ou implementação com especialista (Projetos).',
   },
   {
-    question: 'Preciso ter feito o curso para contratar a Mentoria ou Projetos?',
-    answer: 'Não necessariamente. Se você já tem um diagnóstico claro da empresa, podemos iniciar diretamente. Em muitos casos, fazemos uma avaliação inicial de 1h para entender o momento e recomendar o melhor ponto de entrada.',
+    question: 'Preciso fazer o Método SIGNAL antes de contratar Mentoria ou Projetos?',
+    answer: 'Não obrigatoriamente. Se já tem diagnóstico claro, começamos direto. Fazemos avaliação inicial de 1h para entender o momento e recomendar o melhor ponto de entrada.',
   },
   {
-    question: 'O SIGNAL usa Inteligência Artificial — preciso saber usar IA?',
-    answer: 'Não. O curso ensina do zero como configurar e usar o Claude como ferramenta de análise. Você recebe os prompts prontos para cada etapa. Se sabe usar WhatsApp, consegue usar o método.',
+    question: 'Qual a curva de aprendizado do Método SIGNAL?',
+    answer: 'É straightforward. Acompanhe a metodologia estruturada passo a passo. Materiais de suporte prontos para cada etapa. Interface simples e intuitiva. Qualquer gestor consegue executar.',
   },
   {
-    question: 'Quanto tempo leva para ver resultado?',
-    answer: 'O SIGNAL entrega diagnóstico e plano em 6 semanas. Projetos de implantação entregam resultados mensuráveis entre 60 e 180 dias dependendo da complexidade. A Mentoria começa a gerar resultado operacional a partir do segundo mês.',
+    question: 'Quanto tempo até ter resultado?',
+    answer: 'SIGNAL entrega diagnóstico e plano em 6 semanas. Projetos de implantação geram resultados mensuráveis em 60 a 180 dias. Mentoria começa a gerar resultado operacional a partir do 2º mês.',
   },
   {
-    question: 'A Praxia atende em todo o Brasil?',
-    answer: 'Sim. O SIGNAL é 100% online. A Mentoria é conduzida de forma remota com sessões ao vivo. Projetos de implantação incluem presença in-company para fases críticas — negociamos a logística conforme o escopo.',
+    question: 'Atendo em qualquer localidade no Brasil?',
+    answer: 'Sim. SIGNAL é 100% remoto. Mentoria é remota com sessões ao vivo estruturadas. Projetos incluem presença in-company em fases críticas. Logística negociada conforme escopo.',
   },
 ]
 

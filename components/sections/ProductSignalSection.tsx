@@ -5,23 +5,23 @@ import { motion } from 'framer-motion'
 const benefits = [
   {
     title: 'Clareza absoluta',
-    description: 'Descubra os 3 gargalos que custam mais caro — em reais, não em feeling'
+    description: 'Os 3 gargalos que custam mais caro. Quantificados em reais.'
   },
   {
     title: 'Plano pronto',
-    description: 'Roadmap de 90 dias executável para apresentar aos sócios na próxima reunião'
+    description: 'Roadmap de 90 dias executável. Pronto para apresentar aos sócios.'
   },
   {
     title: 'Documentação completa',
-    description: 'Todos os artefatos prontos (sem precisar refazer do zero): brief, scorecard, plano, slides'
+    description: 'Todos os artefatos: brief, scorecard, plano de ação, slides de apresentação'
   },
   {
     title: 'Implementação acompanhada',
-    description: 'Suporte direto para tirar dúvidas na hora de colocar em prática'
+    description: 'Suporte direto na execução das iniciativas do roadmap'
   },
   {
     title: 'Segurança nas decisões',
-    description: 'Dados e método para defender suas próximas decisões estratégicas'
+    description: 'Dados e método para sustentar suas próximas decisões estratégicas'
   },
   {
     title: 'Framework comprovado',
@@ -124,7 +124,7 @@ export default function ProductSignalSection() {
 
             {/* Description */}
             <p className="text-lg text-ink-muted leading-relaxed max-w-xl">
-              Aplique o método SIGNAL na sua empresa e saia com diagnóstico completo em 6 semanas. Gargalos quantificados financeiramente. Roadmap de 90 dias pronto para executar. <span className="text-ink font-medium">Você recebe toda a metodologia, artefatos e suporte para implementar a solução na sua realidade.</span>
+              Diagnóstico completo em 6 semanas. Gargalos quantificados em reais. Roadmap de 90 dias estruturado e executável. Inclui toda a metodologia, artefatos e suporte para implementação imediata.
             </p>
 
             {/* Para quem é - SPOTLIGHT */}
@@ -134,9 +134,9 @@ export default function ProductSignalSection() {
             >
               <div className="absolute top-0 right-0 w-32 h-32 bg-accent-green/5 rounded-full -mr-16 -mt-16" />
               <div className="relative z-10">
-                <p className="text-sm font-semibold text-accent-green mb-2 uppercase tracking-wide">Para quem é (O cliente ideal)</p>
+                <p className="text-sm font-semibold text-accent-green mb-2 uppercase tracking-wide">Para quem é</p>
                 <p className="text-ink font-medium leading-relaxed text-lg">
-                  Donos de empresas de <span className="text-accent-green font-bold">R$5M a R$20M</span> que cresceram por venda e reputação pessoal, mas sabem que <span className="text-accent-green font-bold">precisam de estrutura para escalar sem se quebrar</span> — e querem insights antes de contratar consultoria cara.
+                  Donos de empresas de <span className="text-accent-green font-bold">R$5M a R$20M</span> que cresceram por venda e reputação pessoal. Que sabem que precisam de <span className="text-accent-green font-bold">estrutura para escalar com segurança</span>. Que querem diagnóstico antes de contratar consultoria.
                 </p>
               </div>
             </motion.div>

@@ -75,8 +75,8 @@ export default function ProductProjetosSection() {
           tag="Implantação"
           title="Projetos Praxia"
           subtitle="O consultor implanta. Você vê o resultado."
-          description="Quando o gargalo é grande demais para o time resolver sozinho, a Praxia entra e faz acontecer. Com metodologia PMI/DMAIC, consultores alocados e framework de implantação em 6 fases — entregamos resultado mensurável com SLA definido e 60 dias de sustentação incluídos."
-          forWho="Empresários que têm o diagnóstico, sabem o que precisa mudar, mas precisam de um especialista liderando a implantação porque o time interno não tem capacidade ou experiência."
+          description="Quando o gargalo exige intervenção especializada, o Praxia implementa. Metodologia PMI/DMAIC, consultores alocados, 6 fases estruturadas. Resultado mensurável com SLA definido. 60 dias de sustentação incluídos."
+          forWho="Empresários com diagnóstico claro que precisam de especialista liderando a implantação. Quando o time interno carece de capacidade ou experiência para a transformação."
           benefits={benefits}
           ctaText="Falar sobre Projetos"
           visual={<ProjetosVisual />}
