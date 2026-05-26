@@ -17,6 +17,15 @@ export default function HeroSection() {
     visible: { opacity: 1, y: 0, transition: { duration: 0.8, ease: 'easeOut' } },
   }
 
+  const handleDownloadCases = () => {
+    const link = document.createElement('a')
+    link.href = '/downloads/Praxia-Cases-Sucesso.pdf'
+    link.download = 'Praxia-Cases-Sucesso.pdf'
+    document.body.appendChild(link)
+    link.click()
+    document.body.removeChild(link)
+  }
+
   const dims = [
     { name: 'Strategy', value: 1.8, color: '#185FA5' },
     { name: 'Growth', value: 2.7, color: '#D85A30' },
@@ -58,7 +67,10 @@ export default function HeroSection() {
               <button className="px-8 py-3.5 rounded-md bg-accent-green hover:opacity-90 text-canvas font-semibold transition-colors duration-300 flex items-center justify-center gap-2">
                 Começar diagnóstico gratuito
               </button>
-              <button className="px-8 py-3.5 rounded-md border-2 border-ink hover:bg-canvas-paper text-ink font-semibold transition-colors duration-300 flex items-center justify-center gap-2">
+              <button
+                onClick={handleDownloadCases}
+                className="px-8 py-3.5 rounded-md border-2 border-ink hover:bg-canvas-paper text-ink font-semibold transition-colors duration-300 flex items-center justify-center gap-2 cursor-pointer"
+              >
                 Ver case de sucesso →
               </button>
             </motion.div>
