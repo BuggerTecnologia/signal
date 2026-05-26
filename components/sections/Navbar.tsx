@@ -14,6 +14,14 @@ export default function Navbar() {
     { label: 'O Método', href: '#metodo' },
   ]
 
+  const handleWhatsAppContact = () => {
+    const phoneNumber = '5541988033251'
+    const message = 'Olá, gostaria de começar meu diagnóstico SIGNAL gratuito'
+    const encodedMessage = encodeURIComponent(message)
+    const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodedMessage}`
+    window.open(whatsappUrl, '_blank')
+  }
+
   return (
     <nav className="fixed top-0 w-full z-[999] bg-canvas border-b border-line">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -43,7 +51,10 @@ export default function Navbar() {
           </div>
 
           {/* Desktop CTA */}
-          <button className="hidden md:block px-6 py-2.5 rounded-md bg-ink hover:bg-ink-mid text-canvas font-medium text-sm transition-colors duration-300">
+          <button
+            onClick={handleWhatsAppContact}
+            className="hidden md:block px-6 py-2.5 rounded-md bg-ink hover:bg-ink-mid text-canvas font-medium text-sm transition-colors duration-300 cursor-pointer"
+          >
             Falar com Especialista
           </button>
 
@@ -85,7 +96,13 @@ export default function Navbar() {
                 {item.label}
               </a>
             ))}
-            <button className="w-full px-4 py-2.5 rounded-md bg-ink hover:bg-ink-mid text-canvas font-medium text-sm mt-4 transition-colors">
+            <button
+              onClick={() => {
+                handleWhatsAppContact()
+                setIsOpen(false)
+              }}
+              className="w-full px-4 py-2.5 rounded-md bg-ink hover:bg-ink-mid text-canvas font-medium text-sm mt-4 transition-colors cursor-pointer"
+            >
               Falar com Especialista
             </button>
           </div>
