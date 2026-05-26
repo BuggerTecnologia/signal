@@ -5,42 +5,45 @@ import { motion } from 'framer-motion'
 const problems = [
   {
     number: 1,
-    title: 'Dono é o gargalo das decisões',
-    description: 'Não é que você não consiga delegar. É que não existe matriz de alçada documentada.',
+    title: 'Receita cresce. Lucro some.',
+    description: 'Empresas que crescem 5–20× via reputação do dono chegam a um paradoxo silencioso: quanto mais vendem, menos sobra. O crescimento está destruindo valor — e o painel de faturamento esconde isso.',
     costs: [
-      '35% do seu tempo em decisões que qualquer gerente saberia tomar',
-      '12% dos pedidos perdidos por demora de aprovação',
-      'Empresa trava em R$15-20M — nunca passa'
+      'Margem bruta caindo enquanto o contador celebra receita',
+      'Lucro absoluto colapsa em 12–18 meses sem intervenção estrutural',
+      'Você descobre o buraco quando já está em endividamento acelerado',
+      'Perda silenciosa de R$1,5M–3M que nunca aparece como "problema"'
     ],
-    solution: 'Estrutura de alçada clara + auditoria de decisões críticas',
-    color: 'accent-sky',
-    barColor: '#7CB4D6',
-  },
-  {
-    number: 2,
-    title: 'KPIs não viram ação',
-    description: 'Crescimento de 75% em faturamento. Mas margem caiu de 10% para 4%. Ninguém vê isso acontecer até é tarde.',
-    costs: [
-      'Lucro absoluto sobre 12-18 meses depois cai abruptamente',
-      'Você descobre quando está em endividamento rápido',
-      'Perda de R$1.5M-3M em lucro que você não vê vindo'
-    ],
-    solution: 'Painel de saúde financeira em tempo real + ritual semanal',
+    solution: 'Painel de saúde financeira por dimensão (margem real por cliente, produto, canal) + ritual semanal de decisão baseado em dados',
     color: 'accent-amber',
     barColor: '#BA7517',
   },
   {
-    number: 3,
-    title: 'Consultoria virou relatório de prateleira',
-    description: 'O diagnóstico é perfeito. Mas não foi feito para sua realidade operacional específica.',
+    number: 2,
+    title: 'O diagnóstico foi feito. E ficou no PDF.',
+    description: 'Você já contratou alguém — consultoria, mentor, curso — que entregou um relatório excelente. Exato, preciso, caro. E ficou na gaveta. Não porque você não quis implementar. Porque o plano não foi feito para a sua realidade operacional.',
     costs: [
-      'Recomendações exigem investimento que você não tem',
-      'Recomendações exigem tempo que seu time não tem',
-      'Zero implementado. Confiança abaixo. Dinheiro gasto fora.'
+      'Recomendações que exigem investimento que a operação não tem agora',
+      'Time sem capacidade de absorver a mudança sem suporte direto',
+      'Zero implementado. Confiança interna destruída. Dinheiro gasto.',
+      'Cada mês de inação custa em oportunidade o equivalente ao diagnóstico em si'
     ],
-    solution: 'Implantação com time seu + responsável claro + 60 dias pós-projeto',
+    solution: 'Implementação lado a lado com seu time — consultor alocado, não relatório. Responsável claro + 60 dias de sustentação pós-projeto',
     color: 'accent-green',
     barColor: '#0F6E56',
+  },
+  {
+    number: 3,
+    title: 'Você é bom demais no operacional.',
+    description: 'O problema não é que você não consegue delegar. É que, sem estrutura de decisão documentada, qualquer delegação vira caos — e você acaba puxando tudo de volta.',
+    costs: [
+      '35% do tempo do CEO em decisões que qualquer gerente treinado poderia tomar',
+      '12% dos pedidos perdidos por gargalo de aprovação',
+      'Empresa trava em R$15–20M — nunca passa — porque escala depende de você',
+      'Impossível tirar férias, abrir unidade ou captar investimento sem colapso'
+    ],
+    solution: 'Estrutura de alçada clara + RACI por função + ritual de decisão que funciona com ou sem você na sala',
+    color: 'accent-sky',
+    barColor: '#7CB4D6',
   },
 ]
 
