@@ -26,6 +26,14 @@ export default function HeroSection() {
     document.body.removeChild(link)
   }
 
+  const handleWhatsAppContact = () => {
+    const phoneNumber = '5511988033251'
+    const message = 'Olá, gostaria de começar meu diagnóstico SIGNAL gratuito'
+    const encodedMessage = encodeURIComponent(message)
+    const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodedMessage}`
+    window.open(whatsappUrl, '_blank')
+  }
+
   const dims = [
     { name: 'Strategy', value: 1.8, color: '#185FA5' },
     { name: 'Growth', value: 2.7, color: '#D85A30' },
@@ -64,7 +72,10 @@ export default function HeroSection() {
               variants={itemVariants}
               className="flex flex-col sm:flex-row gap-4 pt-4"
             >
-              <button className="px-8 py-3.5 rounded-md bg-accent-green hover:opacity-90 text-canvas font-semibold transition-colors duration-300 flex items-center justify-center gap-2">
+              <button
+                onClick={handleWhatsAppContact}
+                className="px-8 py-3.5 rounded-md bg-accent-green hover:opacity-90 text-canvas font-semibold transition-colors duration-300 flex items-center justify-center gap-2 cursor-pointer"
+              >
                 Começar diagnóstico gratuito
               </button>
               <button
