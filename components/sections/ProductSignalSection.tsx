@@ -85,6 +85,14 @@ const SignalVisual = () => (
 )
 
 export default function ProductSignalSection() {
+  const handleWhatsAppContact = () => {
+    const phoneNumber = '5541988033251'
+    const message = 'Olá, gostaria de começar meu diagnóstico SIGNAL gratuito'
+    const encodedMessage = encodeURIComponent(message)
+    const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodedMessage}`
+    window.open(whatsappUrl, '_blank')
+  }
+
   return (
     <section id="signal" className="relative py-24 sm:py-32 px-4 sm:px-6 lg:px-8 bg-canvas">
       <div className="max-w-7xl mx-auto">
@@ -158,8 +166,9 @@ export default function ProductSignalSection() {
 
             {/* CTA */}
             <motion.button
+              onClick={handleWhatsAppContact}
               whileHover={{ x: 4 }}
-              className="text-ink hover:text-ink-muted font-medium text-lg underline decoration-1 underline-offset-4 transition-colors"
+              className="text-ink hover:text-ink-muted font-medium text-lg underline decoration-1 underline-offset-4 transition-colors cursor-pointer"
             >
               Quero conhecer o Método SIGNAL →
             </motion.button>

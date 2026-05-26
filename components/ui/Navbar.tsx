@@ -14,6 +14,14 @@ export default function Navbar() {
     { label: 'Contato', href: '#contato' },
   ]
 
+  const handleWhatsAppContact = () => {
+    const phoneNumber = '5541988033251'
+    const message = 'Olá, gostaria de começar meu diagnóstico SIGNAL gratuito'
+    const encodedMessage = encodeURIComponent(message)
+    const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodedMessage}`
+    window.open(whatsappUrl, '_blank')
+  }
+
   return (
     <nav className="fixed top-0 w-full z-[999] glass border-b border-white/10">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -36,7 +44,10 @@ export default function Navbar() {
                 {item.label}
               </a>
             ))}
-            <button className="px-6 py-2 rounded-lg bg-gradient-to-r from-blue-500 to-blue-600 hover:from-blue-600 hover:to-blue-700 text-white font-medium text-sm transition-all duration-300 hover:shadow-lg hover:shadow-blue-500/20">
+            <button
+              onClick={handleWhatsAppContact}
+              className="px-6 py-2 rounded-lg bg-gradient-to-r from-blue-500 to-blue-600 hover:from-blue-600 hover:to-blue-700 text-white font-medium text-sm transition-all duration-300 hover:shadow-lg hover:shadow-blue-500/20 cursor-pointer"
+            >
               Falar com Especialista
             </button>
           </div>
@@ -79,7 +90,13 @@ export default function Navbar() {
                 {item.label}
               </a>
             ))}
-            <button className="w-full px-4 py-2 rounded-lg bg-gradient-to-r from-blue-500 to-blue-600 text-white font-medium text-sm">
+            <button
+              onClick={() => {
+                handleWhatsAppContact()
+                setIsOpen(false)
+              }}
+              className="w-full px-4 py-2 rounded-lg bg-gradient-to-r from-blue-500 to-blue-600 text-white font-medium text-sm cursor-pointer"
+            >
               Falar com Especialista
             </button>
           </div>

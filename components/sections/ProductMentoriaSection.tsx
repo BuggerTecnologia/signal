@@ -72,6 +72,14 @@ const MentoriaVisual = () => (
 )
 
 export default function ProductMentoriaSection() {
+  const handleWhatsAppContact = () => {
+    const phoneNumber = '5541988033251'
+    const message = 'Olá, gostaria de começar meu diagnóstico SIGNAL gratuito'
+    const encodedMessage = encodeURIComponent(message)
+    const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodedMessage}`
+    window.open(whatsappUrl, '_blank')
+  }
+
   return (
     <section id="mentoria" className="relative py-24 sm:py-32 px-4 sm:px-6 lg:px-8 bg-canvas-warm">
       <div className="max-w-7xl mx-auto">
@@ -86,6 +94,7 @@ export default function ProductMentoriaSection() {
           ctaText="Conhecer a Mentoria"
           visual={<MentoriaVisual />}
           reverse={true}
+          onCtaClick={handleWhatsAppContact}
         />
       </div>
     </section>

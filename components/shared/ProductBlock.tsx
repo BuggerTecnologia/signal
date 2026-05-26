@@ -14,6 +14,7 @@ interface ProductBlockProps {
   ctaText: string
   visual: ReactNode
   reverse?: boolean
+  onCtaClick?: () => void
 }
 
 export default function ProductBlock({
@@ -27,6 +28,7 @@ export default function ProductBlock({
   ctaText,
   visual,
   reverse = false,
+  onCtaClick,
 }: ProductBlockProps) {
   const content = (
     <motion.div
@@ -86,8 +88,9 @@ export default function ProductBlock({
 
       {/* CTA */}
       <motion.button
+        onClick={onCtaClick}
         whileHover={{ x: 4 }}
-        className="text-ink hover:text-ink-muted font-medium text-lg underline decoration-1 underline-offset-4 transition-colors"
+        className="text-ink hover:text-ink-muted font-medium text-lg underline decoration-1 underline-offset-4 transition-colors cursor-pointer"
       >
         {ctaText} →
       </motion.button>

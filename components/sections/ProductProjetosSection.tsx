@@ -59,6 +59,14 @@ const ProjetosVisual = () => (
 )
 
 export default function ProductProjetosSection() {
+  const handleWhatsAppContact = () => {
+    const phoneNumber = '5541988033251'
+    const message = 'Olá, gostaria de começar meu diagnóstico SIGNAL gratuito'
+    const encodedMessage = encodeURIComponent(message)
+    const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodedMessage}`
+    window.open(whatsappUrl, '_blank')
+  }
+
   return (
     <section id="projetos" className="relative py-24 sm:py-32 px-4 sm:px-6 lg:px-8 bg-canvas">
       <div className="max-w-7xl mx-auto">
@@ -72,6 +80,7 @@ export default function ProductProjetosSection() {
           benefits={benefits}
           ctaText="Falar sobre Projetos"
           visual={<ProjetosVisual />}
+          onCtaClick={handleWhatsAppContact}
         />
       </div>
     </section>
