@@ -6,42 +6,42 @@ const problems = [
   {
     number: 1,
     title: 'Receita cresce. Lucro some.',
-    description: 'Empresas que crescem 5–20× via reputação do dono chegam a um paradoxo silencioso: quanto mais vendem, menos sobra. O crescimento está destruindo valor — e o painel de faturamento esconde isso.',
+    description: 'Empresas que crescem 5 a 20 vezes via reputação do dono chegam a um paradoxo: quanto mais vendem, menos sobra. O crescimento está destruindo valor enquanto o painel de faturamento esconde isso.',
     costs: [
       'Margem bruta caindo enquanto o contador celebra receita',
-      'Lucro absoluto colapsa em 12–18 meses sem intervenção estrutural',
+      'Lucro absoluto colapsa em 12 a 18 meses sem intervenção estrutural',
       'Você descobre o buraco quando já está em endividamento acelerado',
-      'Perda silenciosa de R$1,5M–3M que nunca aparece como "problema"'
+      'Perda silenciosa de R$ 1,5M a 3M que nunca aparece como problema'
     ],
-    solution: 'Painel de saúde financeira por dimensão (margem real por cliente, produto, canal) + ritual semanal de decisão baseado em dados',
+    solution: 'Painel de saúde financeira por dimensão com visibilidade real de margens por cliente, produto e canal. Ritual semanal de decisão baseado em dados.',
     color: 'accent-amber',
     barColor: '#BA7517',
   },
   {
     number: 2,
     title: 'O diagnóstico foi feito. E ficou no PDF.',
-    description: 'Você já contratou alguém — consultoria, mentor, curso — que entregou um relatório excelente. Exato, preciso, caro. E ficou na gaveta. Não porque você não quis implementar. Porque o plano não foi feito para a sua realidade operacional.',
+    description: 'Você já contratou consultoria, mentor ou curso que entregou um relatório excelente. Exato, preciso e caro. Ficou na gaveta não porque você não quis implementar, mas porque o plano não foi feito para sua realidade operacional.',
     costs: [
       'Recomendações que exigem investimento que a operação não tem agora',
-      'Time sem capacidade de absorver a mudança sem suporte direto',
+      'Time sem capacidade de absorver mudança sem suporte direto',
       'Zero implementado. Confiança interna destruída. Dinheiro gasto.',
-      'Cada mês de inação custa em oportunidade o equivalente ao diagnóstico em si'
+      'Cada mês de inação custa em oportunidade o equivalente ao próprio diagnóstico'
     ],
-    solution: 'Implementação lado a lado com seu time — consultor alocado, não relatório. Responsável claro + 60 dias de sustentação pós-projeto',
+    solution: 'Implementação lado a lado com seu time. Consultor alocado, não relatório. Responsável claro por cada iniciativa com 60 dias de sustentação pós-projeto.',
     color: 'accent-green',
     barColor: '#0F6E56',
   },
   {
     number: 3,
     title: 'Você é bom demais no operacional.',
-    description: 'O problema não é que você não consegue delegar. É que, sem estrutura de decisão documentada, qualquer delegação vira caos — e você acaba puxando tudo de volta.',
+    description: 'O problema não é que você não consegue delegar. É que sem estrutura de decisão documentada, qualquer delegação vira caos e você acaba puxando tudo de volta.',
     costs: [
       '35% do tempo do CEO em decisões que qualquer gerente treinado poderia tomar',
       '12% dos pedidos perdidos por gargalo de aprovação',
-      'Empresa trava em R$15–20M — nunca passa — porque escala depende de você',
-      'Impossível tirar férias, abrir unidade ou captar investimento sem colapso'
+      'Empresa trava em R$ 15 a 20M porque escala depende unicamente de você',
+      'Impossível tirar férias, abrir unidade ou captar investimento sem colapso operacional'
     ],
-    solution: 'Estrutura de alçada clara + RACI por função + ritual de decisão que funciona com ou sem você na sala',
+    solution: 'Estrutura de alçada clara com RACI por função. Ritual de decisão que funciona com ou sem você presente.',
     color: 'accent-sky',
     barColor: '#7CB4D6',
   },
@@ -93,7 +93,7 @@ export default function ProblemSection() {
               key={idx}
               variants={item}
               whileHover={{ y: -4 }}
-              className="relative bg-canvas-paper border border-line rounded-lg overflow-hidden transition-all duration-300 hover:shadow-cardHover"
+              className="relative bg-canvas-paper border border-line rounded-lg overflow-hidden transition-all duration-300 hover:shadow-cardHover flex flex-col h-full"
             >
               {/* Top colored bar */}
               <div
@@ -101,9 +101,9 @@ export default function ProblemSection() {
                 style={{ backgroundColor: problem.barColor }}
               />
 
-              <div className="p-8">
+              <div className="p-8 flex flex-col flex-grow gap-6">
                 {/* Number and Title */}
-                <div className="flex items-start gap-4 mb-6">
+                <div className="flex items-start gap-4">
                   <div
                     className="w-10 h-10 rounded flex items-center justify-center flex-shrink-0 text-canvas font-semibold text-base"
                     style={{ backgroundColor: problem.barColor }}
@@ -116,12 +116,12 @@ export default function ProblemSection() {
                 </div>
 
                 {/* Description */}
-                <p className="text-sm text-ink-muted mb-6 leading-relaxed">
+                <p className="text-sm text-ink-muted leading-relaxed">
                   {problem.description}
                 </p>
 
                 {/* O custo real */}
-                <div className="mb-6 pb-6 border-b border-line">
+                <div className="pb-6 border-b border-line">
                   <p className="text-xs font-semibold text-ink mb-3 uppercase tracking-wide">O custo real:</p>
                   <ul className="space-y-2">
                     {problem.costs.map((cost, i) => (
@@ -133,9 +133,9 @@ export default function ProblemSection() {
                   </ul>
                 </div>
 
-                {/* Solução Praxia */}
+                {/* Solução Praxia - pushed to bottom */}
                 <div
-                  className="p-4 rounded-lg"
+                  className="p-4 rounded-lg mt-auto"
                   style={{ backgroundColor: `${problem.barColor}10` }}
                 >
                   <p className="text-xs font-semibold mb-2" style={{ color: problem.barColor }}>
