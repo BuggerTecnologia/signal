@@ -6,42 +6,42 @@ const problems = [
   {
     number: 1,
     title: 'Receita cresce. Lucro some.',
-    description: 'Empresas que crescem 5 a 20 vezes via reputação do dono chegam a um paradoxo: quanto mais vendem, menos sobra. O crescimento está destruindo valor enquanto o painel de faturamento esconde isso.',
+    description: 'O crescimento via reputação do dono cria uma ilusão. Faturamento sobe enquanto a margem desaba. O negócio piora conforme cresce.',
     costs: [
-      'Margem bruta caindo enquanto o contador celebra receita',
-      'Lucro absoluto colapsa em 12 a 18 meses sem intervenção estrutural',
-      'Você descobre o buraco quando já está em endividamento acelerado',
-      'Perda silenciosa de R$ 1,5M a 3M que nunca aparece como problema'
+      'Margem bruta caindo enquanto contador celebra receita',
+      'Lucro absoluto colapsa em 12 a 18 meses sem intervenção',
+      'Buraco financeiro descoberto apenas em endividamento acelerado',
+      'Perda de R$ 1,5M a 3M nunca aparece como problema nos relatórios'
     ],
-    solution: 'Painel de saúde financeira por dimensão com visibilidade real de margens por cliente, produto e canal. Ritual semanal de decisão baseado em dados.',
+    solution: 'Painel de saúde financeira com visibilidade de margens por cliente, produto e canal. Decisões semanais baseadas em dados operacionais reais.',
     color: 'accent-amber',
     barColor: '#BA7517',
   },
   {
     number: 2,
     title: 'O diagnóstico foi feito. E ficou no PDF.',
-    description: 'Você já contratou consultoria, mentor ou curso que entregou um relatório excelente. Exato, preciso e caro. Ficou na gaveta não porque você não quis implementar, mas porque o plano não foi feito para sua realidade operacional.',
+    description: 'Relatório excelente, preciso, caro. Ficou na gaveta. Não por falta de vontade, mas porque o plano não encaixa na realidade operacional da sua empresa.',
     costs: [
-      'Recomendações que exigem investimento que a operação não tem agora',
-      'Time sem capacidade de absorver mudança sem suporte direto',
-      'Zero implementado. Confiança interna destruída. Dinheiro gasto.',
-      'Cada mês de inação custa em oportunidade o equivalente ao próprio diagnóstico'
+      'Recomendações demandam investimentos que a operação não possui hoje',
+      'Time não tem capacidade interna para absorver mudança sem suporte especializado',
+      'Implementação zero. Confiança interna erodida. Investimento perdido.',
+      'Cada mês de atraso custa em oportunidade o equivalente ao próprio diagnóstico'
     ],
-    solution: 'Implementação lado a lado com seu time. Consultor alocado, não relatório. Responsável claro por cada iniciativa com 60 dias de sustentação pós-projeto.',
+    solution: 'Implementação lado a lado com seu time. Consultor alocado na operação. Responsável claro por cada iniciativa com 60 dias de sustentação pós-projeto.',
     color: 'accent-green',
     barColor: '#0F6E56',
   },
   {
     number: 3,
     title: 'Você é bom demais no operacional.',
-    description: 'O problema não é que você não consegue delegar. É que sem estrutura de decisão documentada, qualquer delegação vira caos e você acaba puxando tudo de volta.',
+    description: 'Sem estrutura de decisão documentada, delegar vira caos. Você acaba puxando tudo de volta. A empresa não escala sem você.',
     costs: [
-      '35% do tempo do CEO em decisões que qualquer gerente treinado poderia tomar',
+      '35% do tempo do CEO em decisões que qualquer gerente poderia tomar',
       '12% dos pedidos perdidos por gargalo de aprovação',
       'Empresa trava em R$ 15 a 20M porque escala depende unicamente de você',
-      'Impossível tirar férias, abrir unidade ou captar investimento sem colapso operacional'
+      'Impossível tirar férias, abrir unidade ou captar investimento sem operação desabar'
     ],
-    solution: 'Estrutura de alçada clara com RACI por função. Ritual de decisão que funciona com ou sem você presente.',
+    solution: 'Estrutura de alçada clara com RACI por função. Ritual de decisão que funciona independente da sua presença.',
     color: 'accent-sky',
     barColor: '#7CB4D6',
   },
