@@ -27,7 +27,7 @@ export default function HeroSection() {
   }
 
   const handleWhatsAppContact = () => {
-    const phoneNumber = '5511988033251'
+    const phoneNumber = '5541988033251'
     const message = 'Olá, gostaria de começar meu diagnóstico SIGNAL gratuito'
     const encodedMessage = encodeURIComponent(message)
     const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodedMessage}`
