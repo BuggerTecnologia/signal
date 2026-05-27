@@ -1,12 +1,14 @@
 'use client'
 
+const WHATSAPP_CONTACT = `https://wa.me/5541988033251?text=${encodeURIComponent('Olá, gostaria de falar com um especialista Praxia')}`
+
 export default function Footer() {
   const currentYear = new Date().getFullYear()
 
   return (
     <footer className="relative bg-canvas-warm border-t border-line py-12 sm:py-16 px-4 sm:px-6 lg:px-8">
       <div className="max-w-7xl mx-auto">
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 sm:gap-10 lg:gap-12 mb-12">
           {/* Brand */}
           <div className="space-y-4">
             <div className="flex items-center gap-2">
@@ -39,7 +41,7 @@ export default function Footer() {
             <ul className="space-y-2 text-sm">
               <li><a href="#" className="text-ink-muted hover:text-ink transition-colors">Sobre</a></li>
               <li><a href="#" className="text-ink-muted hover:text-ink transition-colors">Blog</a></li>
-              <li><a href="#" className="text-ink-muted hover:text-ink transition-colors">Contato</a></li>
+              <li><a href={WHATSAPP_CONTACT} target="_blank" rel="noopener noreferrer" className="text-ink-muted hover:text-ink transition-colors">Contato</a></li>
             </ul>
           </div>
 
