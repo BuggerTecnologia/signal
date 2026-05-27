@@ -52,7 +52,7 @@ export default function SocialProofSection() {
           className="text-center mb-16"
         >
           <p className="text-sm font-medium text-ink-muted mb-4 uppercase">Resultados</p>
-          <h2 className="text-4xl sm:text-5xl lg:text-6xl font-medium text-ink mb-4">
+          <h2 className="text-2xl sm:text-4xl lg:text-6xl font-medium text-ink mb-4">
             Método aplicado.
             <br />
             <span className="text-ink-muted">Número medido.</span>
@@ -72,7 +72,7 @@ export default function SocialProofSection() {
               key={idx}
               variants={item}
               whileHover={{ y: -4 }}
-              className="bg-canvas-paper border border-line rounded-lg p-6 text-center shadow-card hover:shadow-cardHover transition-all"
+              className="bg-canvas-paper border border-line rounded-lg p-3 sm:p-4 lg:p-6 text-center shadow-card hover:shadow-cardHover transition-all"
             >
               <div className="text-2xl sm:text-3xl font-medium text-ink mb-2">
                 {result.value}
@@ -99,9 +99,9 @@ export default function SocialProofSection() {
                 key={idx}
                 variants={item}
                 whileHover={{ y: -4 }}
-                className="bg-canvas-paper border border-line rounded-lg p-8 shadow-card hover:shadow-cardHover transition-all"
+                className="bg-canvas-paper border border-line rounded-lg p-4 sm:p-6 lg:p-8 shadow-card hover:shadow-cardHover transition-all"
               >
-                <p className="text-lg text-ink-muted mb-6 leading-relaxed italic">
+                <p className="text-base sm:text-lg text-ink-muted mb-6 leading-relaxed italic">
                   "{testimonial.quote}"
                 </p>
                 <div className="border-t border-line pt-6">

@@ -72,7 +72,7 @@ export default function ProblemSection() {
           className="text-center mb-16 sm:mb-20"
         >
           <p className="text-sm font-medium text-accent-green mb-4 uppercase font-semibold">Onde a maioria falha</p>
-          <h2 className="text-3xl sm:text-5xl lg:text-6xl font-semibold text-ink mb-6 max-w-4xl mx-auto">
+          <h2 className="text-2xl sm:text-4xl lg:text-6xl font-semibold text-ink mb-6 max-w-4xl mx-auto">
             3 padrões que impedem escala
           </h2>
           <p className="text-base sm:text-lg text-ink-muted max-w-2xl mx-auto leading-relaxed">
@@ -101,7 +101,7 @@ export default function ProblemSection() {
                 style={{ backgroundColor: problem.barColor }}
               />
 
-              <div className="p-8 flex flex-col flex-grow gap-6">
+              <div className="p-4 sm:p-6 lg:p-8 flex flex-col flex-grow gap-6">
                 {/* Number and Title */}
                 <div className="flex items-start gap-4">
                   <div

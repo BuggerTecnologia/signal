@@ -96,7 +96,7 @@ export default function ProductSignalSection() {
   return (
     <section id="signal" className="relative py-24 sm:py-32 px-4 sm:px-6 lg:px-8 bg-canvas">
       <div className="max-w-7xl mx-auto">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-8 lg:gap-12 items-center">
           {/* Left Content */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -114,16 +114,16 @@ export default function ProductSignalSection() {
 
             {/* Title & Subtitle */}
             <div>
-              <h2 className="text-3xl sm:text-4xl lg:text-5xl font-medium text-ink mb-4">
+              <h2 className="text-2xl sm:text-3xl lg:text-5xl font-medium text-ink mb-4">
                 Método SIGNAL
               </h2>
-              <p className="text-lg sm:text-xl text-ink-muted">
+              <p className="text-base sm:text-lg lg:text-xl text-ink-muted">
                 Diagnostique sua empresa e construa seu roadmap executivo
               </p>
             </div>
 
             {/* Description */}
-            <p className="text-lg text-ink-muted leading-relaxed max-w-xl">
+            <p className="text-base sm:text-lg text-ink-muted leading-relaxed max-w-xl">
               Diagnóstico completo em 6 semanas. Gargalos quantificados em reais. Roadmap de 90 dias estruturado e executável. Inclui toda a metodologia, artefatos e suporte para implementação imediata.
             </p>
 

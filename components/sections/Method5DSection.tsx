@@ -44,12 +44,12 @@ export default function Method5DSection() {
           className="text-center mb-16"
         >
           <p className="text-sm font-medium text-ink-muted mb-4 uppercase">O Método</p>
-          <h2 className="text-4xl sm:text-5xl lg:text-6xl font-medium text-ink mb-4">
+          <h2 className="text-2xl sm:text-4xl lg:text-6xl font-medium text-ink mb-4">
             5 dimensões de maturidade.
             <br />
             <span className="text-ink-muted">Um diagnóstico completo.</span>
           </h2>
-          <p className="text-lg text-ink-muted max-w-2xl mx-auto leading-relaxed">
+          <p className="text-base sm:text-lg text-ink-muted max-w-2xl mx-auto leading-relaxed">
             O SIGNAL identifica exatamente onde está o gargalo — e quanto ele custa. Não por feeling, mas por um framework baseado em padrões internacionais de gestão.
           </p>
         </motion.div>
@@ -60,7 +60,7 @@ export default function Method5DSection() {
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, margin: '-80px' }}
-          className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-6 mb-12"
+          className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-4 sm:gap-5 lg:gap-6 mb-12"
         >
           {dimensions.slice(0, 5).map((dim, idx) => (
             <motion.div

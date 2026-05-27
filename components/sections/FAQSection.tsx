@@ -38,7 +38,7 @@ export default function FAQSection() {
           viewport={{ once: true, margin: '-80px' }}
           className="text-center mb-16"
         >
-          <h2 className="text-4xl sm:text-5xl lg:text-6xl font-medium text-ink mb-4">
+          <h2 className="text-2xl sm:text-4xl lg:text-6xl font-medium text-ink mb-4">
             Dúvidas frequentes
           </h2>
         </motion.div>
@@ -62,14 +62,14 @@ export default function FAQSection() {
                   value={`item-${idx}`}
                   className="border-b border-line last:border-b-0"
                 >
-                  <Accordion.Trigger className="w-full flex items-center justify-between py-6 px-4 sm:px-6 hover:bg-canvas-paper transition-colors group text-left rounded-md">
-                    <span className="font-medium text-ink group-hover:text-ink-mid transition-colors text-lg">
+                  <Accordion.Trigger className="w-full flex items-center justify-between py-4 sm:py-6 px-4 sm:px-6 hover:bg-canvas-paper transition-colors group text-left rounded-md">
+                    <span className="font-medium text-ink group-hover:text-ink-mid transition-colors text-base sm:text-lg">
                       {faq.question}
                     </span>
                     <ChevronDownIcon className="w-5 h-5 text-ink-muted flex-shrink-0 transition-transform group-data-[state=open]:rotate-180" />
                   </Accordion.Trigger>
                   <Accordion.Content className="overflow-hidden data-[state=closed]:animate-accordion-up data-[state=open]:animate-accordion-down">
-                    <div className="px-4 sm:px-6 pb-6 pt-2 text-ink-muted leading-relaxed">
+                    <div className="px-4 sm:px-6 pb-4 sm:pb-6 pt-2 text-xs sm:text-sm text-ink-muted leading-relaxed">
                       {faq.answer}
                     </div>
                   </Accordion.Content>

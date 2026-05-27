@@ -60,10 +60,10 @@ export default function BridgeSection() {
           className="text-center mb-20 sm:mb-24"
         >
           <p className="text-sm font-medium text-accent-green mb-4 uppercase font-semibold">Método em 5 passos</p>
-          <h2 className="text-3xl sm:text-5xl lg:text-6xl font-semibold text-ink mb-6">
+          <h2 className="text-2xl sm:text-4xl lg:text-6xl font-semibold text-ink mb-6">
             Do diagnóstico ao sistema que escala
           </h2>
-          <p className="text-base sm:text-lg text-ink-muted max-w-2xl mx-auto leading-relaxed">
+          <p className="text-sm sm:text-base lg:text-lg text-ink-muted max-w-2xl mx-auto leading-relaxed">
             Cada passo tem objetivo claro, entregável medido e impacto financeiro. Não é consultoria teórica. É implementação real.
           </p>
         </motion.div>
@@ -76,7 +76,7 @@ export default function BridgeSection() {
           viewport={{ once: true, margin: '-80px' }}
           className="relative"
         >
-          <div className="flex flex-col lg:flex-row items-start lg:items-center justify-between gap-8 lg:gap-4">
+          <div className="flex flex-col lg:flex-row items-start lg:items-center justify-between gap-6 lg:gap-4">
             {steps.map((step, idx) => (
               <motion.div
                 key={idx}

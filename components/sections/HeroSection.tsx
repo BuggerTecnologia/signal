@@ -54,7 +54,7 @@ export default function HeroSection() {
             className="space-y-8"
           >
             {/* Main headline */}
-            <motion.h1 variants={itemVariants} className="text-5xl sm:text-6xl lg:text-7xl font-medium text-ink leading-tight">
+            <motion.h1 variants={itemVariants} className="text-3xl sm:text-5xl lg:text-7xl font-medium text-ink leading-tight">
               De empresa de dono<br />
               <span className="text-accent-green">para empresa de sistema</span>
             </motion.h1>
@@ -89,7 +89,7 @@ export default function HeroSection() {
             {/* Stats */}
             <motion.div
               variants={itemVariants}
-              className="grid grid-cols-3 gap-4 pt-8 border-t border-line"
+              className="grid grid-cols-1 sm:grid-cols-3 gap-4 pt-8 border-t border-line"
             >
               <div className="bg-canvas-paper border border-line rounded-lg p-4 text-center hover:border-line-strong transition-colors">
                 <div className="text-2xl sm:text-3xl font-medium text-ink mb-1">50+</div>

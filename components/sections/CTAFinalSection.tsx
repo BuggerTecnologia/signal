@@ -13,14 +13,14 @@ export default function CTAFinalSection() {
           className="text-center space-y-12"
         >
           {/* Headline */}
-          <h2 className="text-4xl sm:text-5xl lg:text-6xl font-medium text-ink">
+          <h2 className="text-2xl sm:text-4xl lg:text-6xl font-medium text-ink">
             Por onde você quer
             <br />
             <span className="text-ink-muted">começar?</span>
           </h2>
 
           {/* Subheadline */}
-          <p className="text-lg text-ink-muted max-w-2xl mx-auto leading-relaxed">
+          <p className="text-base sm:text-lg text-ink-muted max-w-2xl mx-auto leading-relaxed">
             Onde quer que esteja sua empresa. O primeiro passo é clareza. Sobre o problema real, seu custo financeiro e o plano para resolver.
           </p>
 
@@ -30,25 +30,25 @@ export default function CTAFinalSection() {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.2 }}
             viewport={{ once: true }}
-            className="flex flex-col sm:flex-row gap-4 justify-center flex-wrap"
+            className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center flex-wrap"
           >
             <motion.button
               whileHover={{ scale: 1.02, y: -2 }}
-              className="px-8 py-3.5 rounded-md bg-ink hover:bg-ink-mid text-canvas font-medium transition-colors duration-300"
+              className="px-6 sm:px-8 py-3 sm:py-3.5 rounded-md bg-ink hover:bg-ink-mid text-canvas font-medium text-sm sm:text-base transition-colors duration-300"
             >
               Diagnóstico com Método SIGNAL
             </motion.button>
 
             <motion.button
               whileHover={{ scale: 1.02, y: -2 }}
-              className="px-8 py-3.5 rounded-md border border-line hover:bg-canvas-warm text-ink font-medium transition-colors duration-300"
+              className="px-6 sm:px-8 py-3 sm:py-3.5 rounded-md border border-line hover:bg-canvas-warm text-ink font-medium text-sm sm:text-base transition-colors duration-300"
             >
               Mentoria Praxia
             </motion.button>
 
             <motion.button
               whileHover={{ scale: 1.02, y: -2 }}
-              className="px-8 py-3.5 rounded-md border border-line hover:bg-canvas-warm text-ink font-medium transition-colors duration-300"
+              className="px-6 sm:px-8 py-3 sm:py-3.5 rounded-md border border-line hover:bg-canvas-warm text-ink font-medium text-sm sm:text-base transition-colors duration-300"
             >
               Projeto de Implantação
             </motion.button>

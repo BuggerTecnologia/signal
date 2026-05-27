@@ -47,29 +47,29 @@ export default function ProductBlock({
 
       {/* Title & Subtitle */}
       <div>
-        <h2 className="text-3xl sm:text-4xl lg:text-5xl font-medium text-ink mb-4">
+        <h2 className="text-2xl sm:text-3xl lg:text-5xl font-medium text-ink mb-4">
           {title}
         </h2>
-        <p className="text-lg sm:text-xl text-ink-muted">
+        <p className="text-base sm:text-lg lg:text-xl text-ink-muted">
           {subtitle}
         </p>
       </div>
 
       {/* Description */}
-      <p className="text-lg text-ink-muted leading-relaxed max-w-xl">
+      <p className="text-base sm:text-lg text-ink-muted leading-relaxed max-w-xl">
         {description}
       </p>
 
       {/* For Who */}
-      <div className="border-l border-line bg-canvas-warm pl-6 py-4 rounded-r-lg">
+      <div className="border-l border-line bg-canvas-warm pl-4 sm:pl-6 py-4 rounded-r-lg">
         <p className="text-sm font-medium text-ink mb-2">Para quem é</p>
-        <p className="text-ink-muted leading-relaxed">
+        <p className="text-xs sm:text-sm text-ink-muted leading-relaxed">
           {forWho}
         </p>
       </div>
 
       {/* Benefits */}
-      <div className="bg-canvas-warm border border-line rounded-lg p-6 space-y-3">
+      <div className="bg-canvas-warm border border-line rounded-lg p-4 sm:p-6 space-y-3">
         <p className="text-sm font-medium text-ink uppercase tracking-wider">Benefícios</p>
         {benefits.map((benefit, idx) => (
           <motion.div
@@ -110,7 +110,7 @@ export default function ProductBlock({
   )
 
   return (
-    <div className={`grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center ${reverse ? 'lg:auto-cols-max lg:grid-cols-2' : ''}`}>
+    <div className={`grid grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-8 lg:gap-12 xl:gap-16 items-center ${reverse ? 'lg:auto-cols-max lg:grid-cols-2' : ''}`}>
       {reverse ? (
         <>
           {visualElement}
